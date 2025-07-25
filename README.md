@@ -97,3 +97,11 @@ streamlit run smart_kitchen_assistant/ui/main.py
 Some features such as GPT and Whisper require an OpenAI API key. Set
 `OPENAI_API_KEY` in your environment before starting the server if you wish to
 use them.
+
+## Running tests
+
+From the repository root simply run:
+
+```bash
+pytest
+```
