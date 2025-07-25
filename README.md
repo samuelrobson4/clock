@@ -77,3 +77,15 @@ smart_kitchen_assistant/
 - Code should be well-commented and easily extendable
 
 Start by generating the `timer_manager.py` file and the backend server with FastAPI. Then scaffold the Streamlit UI. Prioritize modular code and testable components.
+
+## Running the demo
+Install requirements and start the API:
+```bash
+pip install -r smart_kitchen_assistant/requirements.txt
+uvicorn smart_kitchen_assistant.backend.app:app --reload
+```
+
+In another terminal run the UI:
+```bash
+streamlit run smart_kitchen_assistant/ui/main.py
+```
