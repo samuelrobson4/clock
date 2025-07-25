@@ -66,7 +66,7 @@ smart_kitchen_assistant/
      - Timer management (e.g., set/query/delete)
    - Calls relevant backend functions and forms a friendly spoken/text response
 
-5. Optional:
+5. Finally:
    - Add `tts_handler.py` using pyttsx3 or edge-tts
    - Add `esp_bridge.py` for ESP32 (e.g., send responses over MQTT or HTTP)
 
