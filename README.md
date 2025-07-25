@@ -65,10 +65,14 @@ smart_kitchen_assistant/
      - Recipe progression (e.g., next step)
      - Timer management (e.g., set/query/delete)
    - Calls relevant backend functions and forms a friendly spoken/text response
+   - `gpt_handler.py` and `whisper_handler.py` provide simple wrappers for the
+     OpenAI APIs used to interpret user input.
 
 5. Finally:
    - Add `tts_handler.py` using pyttsx3 or edge-tts
    - Add `esp_bridge.py` for ESP32 (e.g., send responses over MQTT or HTTP)
+   - These modules are now included for basic text-to-speech output and a
+     minimal HTTP bridge to an ESP32 device.
 
 ## ✅ Goals:
 - Fully modular and testable backend
@@ -89,3 +93,7 @@ In another terminal run the UI:
 ```bash
 streamlit run smart_kitchen_assistant/ui/main.py
 ```
+
+Some features such as GPT and Whisper require an OpenAI API key. Set
+`OPENAI_API_KEY` in your environment before starting the server if you wish to
+use them.
