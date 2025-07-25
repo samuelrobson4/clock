@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 from datetime import datetime
+import time
 
 API_BASE = "http://localhost:8000"
 
@@ -41,4 +42,4 @@ while True:
         ])
     else:
         timers_container.write("No active timers")
-    st.sleep(1)
+    time.sleep(1)
